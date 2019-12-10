@@ -29,5 +29,8 @@
 :fire:❤️**Music**❤️:fire:
 ♫play
 ♫skip
-♫disconnect
+♫stop
 ♫pause
+♫resume
+♫queue
+♫np
