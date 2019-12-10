@@ -48,11 +48,6 @@ bot.on('message', async message => {
             return message.channel.send('Music Resmed');
         }return message.channel.send('Non ci sono canzoni attualmente in esecuzione');
     }
-    else {
-		message.channel.send('è tanto difficile inserire un comando valido ??!!')
-	} 
-    
-    
 });
 
 async function execute(message, serverQueue) {
