@@ -19,9 +19,15 @@ bot.on('message', async message => {
 	if (message.content.startsWith(`${PREFIX}play`)) {
 		execute(message, serverQueue);
 		return;
-	} else if (message.content.startsWith(`${PREFIX}skip`)) {
+    }else if (message.content.startsWith(`${PREFIX}p`)) {
+		execute(message, serverQueue);
+		return;} 
+    else if (message.content.startsWith(`${PREFIX}skip`)) {
 		skip(message, serverQueue);
-		return;
+        return;
+    }else if (message.content.startsWith(`${PREFIX}s`)) {
+            skip(message, serverQueue);
+            return;
 	} else if (message.content.startsWith(`${PREFIX}stop`)) {
 		stop(message, serverQueue);
 		return;
