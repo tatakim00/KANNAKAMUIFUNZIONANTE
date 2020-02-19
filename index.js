@@ -175,7 +175,7 @@ bot.on('guildMemberAdd', member => {
     channel.send(`Benvenuto ${member}<:kannakamui:608404704845889556>, siamo felici di accoglierti in ,**:cherry_blossom:𝕃𝕠𝕝𝕚𝕤𝕎𝕠𝕣𝕝𝕕:cherry_blossom:**.<a:zt:608309871896690689>
 Non abusare delle bambine e buona permanenza! <:zhoulamerda:608396991436685344>`);
 const embed = new Discord.RichEmbed()
-                    .setImage("https://i.kym-cdn.com/photos/images/original/001/241/247/c04.gif")
+                    .setImage("https://i.kym-cdn.com/photos/images/original/001/330/344/519.gif")
                     channel.send({embed})
 });
 
