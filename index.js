@@ -50,7 +50,7 @@ client.on("guildMemberAdd", member =>{
 }); 
 
 client.on('message', message =>{
-  if(message.content.startsWith(prefix + "aotmeme")) {
+  if(message.content.startsWith(PREFIX + "aotmeme")) {
     number = 20;
     var random = Math.floor (Math.random() * (number));
     const embed = new Discord.MessageEmbed()
