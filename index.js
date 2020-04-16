@@ -56,7 +56,7 @@ client.on('message', message =>{
     const embed = new Discord.RichEmbed()
     .setTitle('𝐄𝐜𝐜𝐨 𝐚 𝐭𝐞 𝐮𝐧 𝐦𝐞𝐦𝐞 𝐝𝐢 𝐀𝐭𝐭𝐚𝐜𝐤 𝐨𝐧 𝐓𝐢𝐭𝐚𝐧：')
     .setColor(53380)
-    .setAuthor(OwO)
+    .setAuthor('OwO')
     .setImage(array.aotmeme[random])
     .setFooter('UmaruChan al vostro servizio!')
     .setTimestamp()
