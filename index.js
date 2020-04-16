@@ -38,7 +38,7 @@ client.on('message', msg => {
 client.on("guildMemberAdd", member =>{
   var channel = member.guild.channels.cache.find(channel => channel.name === "♡┆benvenuti");
   if(!channel) return;
-  const welcomeEmbed = new Discord.MessageEmbed()
+  const welcomeEmbed = new Discord.RichEmbed()
   .setColor(10181046)
   .setAuthor('Welcome', 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRfLjOfKtqlizcf_ZFZMIbZNrzjfGgkjCr9nC_F3SEVN_TU6yL9&usqp=CAU')
   .setDescription(`Carissimo/a ${member}\n₊˚๑🌙➤1. ti invitiamo a scegliere i tuoi ruoli nel canale <#640158874631929856> \n₊˚๑🌙➤ 2. leggere il regolamento su <#629435999667093544>\n₊˚๑🌙➤ 3. Per qualsiasi lamentela o consiglio per aiutarci a migliorare potete rivolgervi ai @ʚ: ᙏᥲɩᑯ-⳽ᥙ :ɞ <:tataculoforever:608404703772016682>\n🌸 . ⋆ ｡ ⋆˚ ☽ ˚ ｡ ⋆ 🌙 ⋆ ｡ ˚ ☽ ˚⋆ ｡ ⋆ . 🌸\n ₊˚๑🌙➤ Se non trovate alcun @ʚ: ᙏᥲɩᑯ-⳽ᥙ :ɞ , i @Ⲙⲉⲟⲱ𝖽ⲉⲅⲁⲧⲟⲅ⳽ saranno a vostra disposizione!\n`)
@@ -53,7 +53,7 @@ client.on('message', message =>{
   if(message.content.startsWith(PREFIX + "aotmeme")) {
     number = 20;
     var random = Math.floor (Math.random() * (number));
-    const embed = new Discord.MessageEmbed()
+    const embed = new Discord.RichEmbed()
     .setTitle('𝐄𝐜𝐜𝐨 𝐚 𝐭𝐞 𝐮𝐧 𝐦𝐞𝐦𝐞 𝐝𝐢 𝐀𝐭𝐭𝐚𝐜𝐤 𝐨𝐧 𝐓𝐢𝐭𝐚𝐧：')
     .setColor(53380)
     .setAuthor(OwO)
