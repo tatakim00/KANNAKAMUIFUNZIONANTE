@@ -38,7 +38,7 @@ client.on('message', msg => {
 client.on("guildMemberAdd", member =>{
   const channel = member.guild.channels.find(channel => channel.name === "♡┆benvenuti");
   if(!channel) return;
-  message.channel.send({embed:{
+  channel.send({embed:{
     "title": "ʚ 𝑩𝒆𝒏𝒗𝒆𝒏𝒖𝒕𝒐/𝒂 𝒔𝒕𝒖𝒑𝒓𝒂𝒕𝒐𝒓𝒆 ɞ ",
     "description": `Carissimo/a ${member}\n₊˚๑🌙➤1. ti invitiamo a scegliere i tuoi ruoli nel canale <#640158874631929856> \n₊˚๑🌙➤ 2. leggere il regolamento su <#629435999667093544>\n₊˚๑🌙➤ 3. Per qualsiasi lamentela o consiglio per aiutarci a migliorare potete rivolgervi ai @ʚ: ᙏᥲɩᑯ-⳽ᥙ :ɞ <:tataculoforever:608404703772016682>\n🌸 . ⋆ ｡ ⋆˚ ☽ ˚ ｡ ⋆ 🌙 ⋆ ｡ ˚ ☽ ˚⋆ ｡ ⋆ . 🌸\n ₊˚๑🌙➤ Se non trovate alcun @ʚ: ᙏᥲɩᑯ-⳽ᥙ :ɞ , i @Ⲙⲉⲟⲱ𝖽ⲉⲅⲁⲧⲟⲅ⳽ saranno a vostra disposizione!\n`,
     "author":{"name":"Welcome","icon_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRfLjOfKtqlizcf_ZFZMIbZNrzjfGgkjCr9nC_F3SEVN_TU6yL9&usqp=CAU"},
