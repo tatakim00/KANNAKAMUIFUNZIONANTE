@@ -22,6 +22,7 @@ client.on('message', message => {
     .setThumbnail("https://i.gifer.com/9e1Z.gif")
     .setAuthor("https://media.giphy.com/media/U6kGxfqszGeUBFnOT8/giphy.gif")
     .setFooter('UmaruChan al vostro servizio!',"https://i.pinimg.com/originals/8b/42/6c/8b426c9bedc37054cd7e73925fa10da5.gif" )
+    message.channel.send(embed)
   }
 });
 
@@ -36,7 +37,7 @@ client.on("guildMemberAdd", member =>{
   .setThumbnail ("https://i.gifer.com/9e1Z.gif")
   .setFooter('Non flammate, in caso fate 1vs1', 'https://cdn.streamelements.com/uploads/d1d2ae90-5e10-432b-bb46-68a594d5dc1d.gif')
   .setImage("https://i.pinimg.com/originals/8b/42/6c/8b426c9bedc37054cd7e73925fa10da5.gif")
-  channel.send(welcomeEmbed);
+  message.channel.send(welcomeEmbed)
 }); 
 
 client.on('message', message =>{
