@@ -8,9 +8,9 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('message', message => {
-  if (message.content === 'Cosa pensi dello Zhou?') {
-    message.reply('Trovo sia un cinese bastardo, frocio e con la faccia tonda <:zhoualcolizzato:653659819915608102>');
+client.on('message', msg => {
+  if (msg.content === 'Cosa pensi dello Zhou?') {
+    msg.reply('Trovo sia un cinese bastardo, frocio e con la faccia tonda <:zhoualcolizzato:653659819915608102>');
   }
 });
 
@@ -20,8 +20,8 @@ client.on('message', message => {
     .setColor(53380)
     .setDescription("<:zhoualcolizzato:653659819915608102> Funny Commands: <:zhoualcolizzato:653659819915608102>\n♡ ᴀᴏᴛᴍᴇᴍᴇ\n♡ ʟᴏʟɪ\n♡ ᴋᴀɴɴᴀᴋᴀᴍᴜɪ\n♡ ᴀʜᴇɢᴀᴏ\n♡ ᴀɴɪᴍᴇᴍᴇᴍᴇ\n<:scascodimerda:608416099406708746> 𝖎𝖓𝖙𝖊𝖗𝖆𝖈𝖙𝖎𝖔𝖓𝖘:<:dannylamerda:608414165090173009>\n♡𝓅𝓊𝓃𝒸𝒽\n♡𝓈𝓁𝒶𝓅\n♡𝓀𝒾𝓈𝓈\n♡𝒽𝓊𝑔\n♡𝓁𝒾𝒸𝓀\n♡𝒻𝒶𝒸𝑒𝓅𝒶𝓁𝓂\n♡𝓅𝒶𝓉\n♡𝒸𝓇𝓎\n<:delfinofamososudiscord:608406145400307714> ℳ𝓊𝓈𝒾𝒸: <:aurelionunminion:653666501924225035>\n♫ ᴾˡᵃʸ\n♫ ˢᵏⁱᵖ\n♫ ᴸᵒᵒᵖ /n")
     .setThumbnail("https://i.gifer.com/9e1Z.gif")
-    .setAuthor("https://media.giphy.com/media/U6kGxfqszGeUBFnOT8/giphy.gif")
-    .setFooter('UmaruChan al vostro servizio!',"https://i.pinimg.com/originals/8b/42/6c/8b426c9bedc37054cd7e73925fa10da5.gif" )
+    .setAuthor('https://media.giphy.com/media/U6kGxfqszGeUBFnOT8/giphy.gif')
+    .setFooter('UmaruChan al vostro servizio! https://i.pinimg.com/originals/8b/42/6c/8b426c9bedc37054cd7e73925fa10da5.gif' )
     message.channel.send(embed)
   }
 });
