@@ -8,13 +8,13 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('message', msg => {
-  if (msg.content === 'Cosa pensi dello Zhou?') {
-    msg.reply('Trovo sia un cinese bastardo, frocio e con la faccia tonda <:zhoualcolizzato:653659819915608102>');
+client.on('message', message => {
+  if (message.content === 'Cosa pensi dello Zhou?') {
+    message.reply('Trovo sia un cinese bastardo, frocio e con la faccia tonda <:zhoualcolizzato:653659819915608102>');
   }
 });
 
-client.on('message', msg => {
+client.on('message', message => {
   if (message.content.startsWith(PREFIX + "help")) {
     const embed = new Discord.RichEmbed()
     .setColor(53380)
