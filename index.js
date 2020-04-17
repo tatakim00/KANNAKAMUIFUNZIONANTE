@@ -15,16 +15,24 @@ client.on('message', msg => {
 });
 
 client.on('message', message => {
-  if (message.content.startsWith(PREFIX + "help")) {
-    const embed = new Discord.RichEmbed()
-    .setColor(53380)
-    .setDescription("<:zhoualcolizzato:653659819915608102> Funny Commands: <:zhoualcolizzato:653659819915608102>\n♡ ᴀᴏᴛᴍᴇᴍᴇ\n♡ ʟᴏʟɪ\n♡ ᴋᴀɴɴᴀᴋᴀᴍᴜɪ\n♡ ᴀʜᴇɢᴀᴏ\n♡ ᴀɴɪᴍᴇᴍᴇᴍᴇ\n<:scascodimerda:608416099406708746> 𝖎𝖓𝖙𝖊𝖗𝖆𝖈𝖙𝖎𝖔𝖓𝖘:<:dannylamerda:608414165090173009>\n♡𝓅𝓊𝓃𝒸𝒽\n♡𝓈𝓁𝒶𝓅\n♡𝓀𝒾𝓈𝓈\n♡𝒽𝓊𝑔\n♡𝓁𝒾𝒸𝓀\n♡𝒻𝒶𝒸𝑒𝓅𝒶𝓁𝓂\n♡𝓅𝒶𝓉\n♡𝒸𝓇𝓎\n<:delfinofamososudiscord:608406145400307714> ℳ𝓊𝓈𝒾𝒸: <:aurelionunminion:653666501924225035>\n♫ ᴾˡᵃʸ\n♫ ˢᵏⁱᵖ\n♫ ᴸᵒᵒᵖ /n")
-    .setThumbnail("https://i.gifer.com/9e1Z.gif")
-    .setAuthor('https://media.giphy.com/media/U6kGxfqszGeUBFnOT8/giphy.gif')
-    .setFooter('UmaruChan al vostro servizio! https://i.pinimg.com/originals/8b/42/6c/8b426c9bedc37054cd7e73925fa10da5.gif' )
-    message.channel.send(embed)
-  }
-});
+  if (message.content.startsWith === (PREFIX + "help")) {
+    message.reply({embed: {
+        "title": "ＵｍａｒｕＣｈａｎ Ｃｏｍｍａｎｄｓ：",
+        "description": "<:zhoualcolizzato:653659819915608102> Funny Commands: <:zhoualcolizzato:653659819915608102>\n♡ ᴀᴏᴛᴍᴇᴍᴇ\n♡ ʟᴏʟɪ\n♡ ᴋᴀɴɴᴀᴋᴀᴍᴜɪ\n♡ ᴀʜᴇɢᴀᴏ\n♡ ᴀɴɪᴍᴇᴍᴇᴍᴇ\n<:scascodimerda:608416099406708746> 𝖎𝖓𝖙𝖊𝖗𝖆𝖈𝖙𝖎𝖔𝖓𝖘:<:dannylamerda:608414165090173009>\n♡𝓅𝓊𝓃𝒸𝒽\n♡𝓈𝓁𝒶𝓅\n♡𝓀𝒾𝓈𝓈\n♡𝒽𝓊𝑔\n♡𝓁𝒾𝒸𝓀\n♡𝒻𝒶𝒸𝑒𝓅𝒶𝓁𝓂\n♡𝓅𝒶𝓉\n♡𝒸𝓇𝓎\n<:delfinofamososudiscord:608406145400307714> ℳ𝓊𝓈𝒾𝒸: <:aurelionunminion:653666501924225035>\n♫ ᴾˡᵃʸ\n♫ ˢᵏⁱᵖ\n♫ ᴸᵒᵒᵖ /n",
+        "author": {
+          "name": "!u {command}",
+          "icon_url": "https://media.giphy.com/media/U6kGxfqszGeUBFnOT8/giphy.gif"
+        },
+        "color": 53380,
+        "footer": {
+          "text": "UmaruChan al vostro servizio!",
+          "icon_url": "https://i.pinimg.com/originals/8b/42/6c/8b426c9bedc37054cd7e73925fa10da5.gif"
+        },
+        "thumbnail": {
+          "url": "https://media.tenor.com/images/0009812178810e876fda65c7559d0642/tenor.gif"
+        },
+    }});
+  }});
 
 client.on("guildMemberAdd", member =>{
   const channel = member.guild.channels.find(channel => channel.name === "♡┆benvenuti");
